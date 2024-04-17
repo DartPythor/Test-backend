@@ -12,4 +12,6 @@ class MenuModel(admin.ModelAdmin):
     inlines = (MenuSectionInline,)
 
 
+admin.site.register(MenuSection)
+
 __all__ = ()
