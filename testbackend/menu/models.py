@@ -14,6 +14,9 @@ class Menu(models.Model):
         unique=True,
     )
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         verbose_name = "меню"
         verbose_name_plural = "меню"
