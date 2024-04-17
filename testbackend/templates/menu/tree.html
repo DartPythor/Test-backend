@@ -1,0 +1,6 @@
+<h1>{{ name_menu }}</h1>
+<ul>
+    {% for node in tree %}
+        {% include "menu/section.html" %}
+    {% endfor %}
+</ul>

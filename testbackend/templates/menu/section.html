@@ -1,0 +1,11 @@
+<li><a href="{% url node.url %}">{{node.name}}</a>
+    {% if node.child %}
+    <ul>
+        {% for ch in node.child %}
+        {% with node=ch template_name="menu/section.html" %}
+        {% include template_name %}
+        {% endwith %}
+        {% endfor %}
+    </ul>
+    {%endif%}
+</li>
