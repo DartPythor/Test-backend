@@ -1,0 +1,16 @@
+<li>
+    {% if node.is_named_url %}
+    <a href="{% url node.url %}">{{ node.name }}</a>
+    {% else %}
+    <a href="{{ node.url }}">{{ node.name }}</a>
+    {% endif %}
+    {% if node.child %}
+    <ul>
+        {% for ch in node.child %}
+        {% with node=ch template_name="menu/section.html" %}
+        {% include template_name %}
+        {% endwith %}
+        {% endfor %}
+    </ul>
+    {% endif %}
+</li>
