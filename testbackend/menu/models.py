@@ -28,9 +28,11 @@ class MenuSection(models.Model):
         help_text="Укажите название меню.",
         unique=True,
     )
-    url = models.SlugField(
+    url = models.CharField(
         max_length=200,
-        verbose_name="ссылка",
+        verbose_name="ссылка, если named url, "
+        "то формат записи: 'namespace:name'",
+        unique=True,
     )
     is_named_url = models.BooleanField(
         default=False,
