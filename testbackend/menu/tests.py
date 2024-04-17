@@ -13,8 +13,7 @@ class TestCreation(TestCase):
         self.assertEqual(count_obj + 1, Menu.objects.count())
 
     def test_creation_section(self):
-        menu = Menu(
-        )
+        menu = Menu()
         menu.save()
 
         count_obj = MenuSection.objects.count()
