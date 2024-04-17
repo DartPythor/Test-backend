@@ -1,0 +1,170 @@
+[
+  {
+    "model": "menu.menu",
+    "pk": 1,
+    "fields": {
+      "name": "О нас"
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 2,
+    "fields": {
+      "name": "Меню"
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 1,
+    "fields": {
+      "name": "Контакты",
+      "url": "menu:contacts",
+      "is_named_url": true,
+      "parent": null,
+      "menu": 1
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 2,
+    "fields": {
+      "name": "Главная",
+      "url": "menu:home",
+      "is_named_url": true,
+      "parent": null,
+      "menu": 1
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 3,
+    "fields": {
+      "name": "CEO",
+      "url": "menu:ceo",
+      "is_named_url": true,
+      "parent": 1,
+      "menu": 1
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 4,
+    "fields": {
+      "name": "Менеджер",
+      "url": "menu:manager",
+      "is_named_url": true,
+      "parent": 1,
+      "menu": 1
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 5,
+    "fields": {
+      "name": "Разработчики (Лиды)",
+      "url": "menu:leads",
+      "is_named_url": true,
+      "parent": 1,
+      "menu": 1
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 6,
+    "fields": {
+      "name": "Python",
+      "url": "menu:python",
+      "is_named_url": true,
+      "parent": 5,
+      "menu": 1
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 7,
+    "fields": {
+      "name": "Golang",
+      "url": "menu:golang",
+      "is_named_url": true,
+      "parent": 5,
+      "menu": 1
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 8,
+    "fields": {
+      "name": "Адрес",
+      "url": "menu:location",
+      "is_named_url": true,
+      "parent": null,
+      "menu": 1
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 9,
+    "fields": {
+      "name": "Офис",
+      "url": "menu:office",
+      "is_named_url": true,
+      "parent": 8,
+      "menu": 1
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 10,
+    "fields": {
+      "name": "Друзья",
+      "url": "menu:friends",
+      "is_named_url": true,
+      "parent": null,
+      "menu": 2
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 11,
+    "fields": {
+      "name": "Аккаунт",
+      "url": "menu:account",
+      "is_named_url": true,
+      "parent": null,
+      "menu": 2
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 12,
+    "fields": {
+      "name": "Новости",
+      "url": "menu:news",
+      "is_named_url": true,
+      "parent": null,
+      "menu": 2
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 13,
+    "fields": {
+      "name": "Горячие",
+      "url": "menu:news_hot",
+      "is_named_url": true,
+      "parent": 12,
+      "menu": 2
+    }
+  },
+  {
+    "model": "menu.menusection",
+    "pk": 14,
+    "fields": {
+      "name": "Холодные",
+      "url": "menu:news_ice",
+      "is_named_url": true,
+      "parent": 12,
+      "menu": 2
+    }
+  }
+]
