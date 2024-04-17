@@ -1,4 +1,9 @@
-<li><a href="{% url node.url %}">{{node.name}}</a>
+<li>
+    {% if node.is_named_url %}
+    <a href="{% url node.url %}">{{ node.name }}</a>
+    {% else %}
+    <a href="{{ node.url }}">{{ node.name }}</a>
+    {% endif %}
     {% if node.child %}
     <ul>
         {% for ch in node.child %}
@@ -7,5 +12,5 @@
         {% endwith %}
         {% endfor %}
     </ul>
-    {%endif%}
+    {% endif %}
 </li>
