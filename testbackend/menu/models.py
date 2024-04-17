@@ -30,8 +30,8 @@ class MenuSection(models.Model):
     )
     url = models.CharField(
         max_length=200,
-        verbose_name="ссылка, если named url, "
-        "то формат записи: 'namespace:name'",
+        verbose_name="ссылка",
+        help_text="Если named url, " "то формат записи: 'namespace:name'",
         unique=True,
     )
     is_named_url = models.BooleanField(
