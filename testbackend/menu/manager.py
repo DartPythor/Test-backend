@@ -6,10 +6,11 @@ class MenuSectionsManager(Manager):
         return (
             super()
             .get_queryset()
+            .select_related("parent")
             .filter(
                 menu__name=menu_name,
             )
-        ).values()
+        )
 
 
 __all__ = ()
